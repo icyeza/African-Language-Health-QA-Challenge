@@ -1,0 +1,27 @@
+[
+  {
+    "exp_id": "01_retrieval_baseline",
+    "timestamp": "2026-06-12T20:57:25+00:00",
+    "description": "TF-IDF (char_wb 2-5) nearest-train-question, copy answer, per-subset",
+    "hypothesis": "Repeated questions + 74% lexical metric => copied real answers are a strong floor.",
+    "tokenizer_mode": "leaderboard",
+    "lb_rouge1_f1": 0.4371,
+    "lb_rougeL_f1": 0.3773,
+    "lb_rouge_weighted": 0.4072,
+    "val_rouge1_f1": 0.429,
+    "val_rougeL_f1": 0.3743,
+    "val_rouge_weighted": 0.4017,
+    "config": "{\"vectorizer\": \"char_wb(2,5)\", \"per_subset\": true, \"corpus\": \"full_clean_train\"}",
+    "notes": "Baseline floor, OFFICIAL metric. Battleground = Ghana subsets (low + 37.6% of test).",
+    "by_subset": {
+      "Aka_Gha": 0.2851,
+      "Amh_Eth": 0.1504,
+      "Eng_Eth": 0.5197,
+      "Eng_Gha": 0.2591,
+      "Eng_Ken": 0.6118,
+      "Eng_Uga": 0.5412,
+      "Lug_Uga": 0.5166,
+      "Swa_Ken": 0.6047
+    }
+  }
+]
